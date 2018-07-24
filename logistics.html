@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Logistics - Women in Technology InterConnect</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="logistics.html">Logistics</a></li>
+      </ul>
+      <!-- <ul class="right hide-on-med-and-down">
+        <li><a href="attendees.html">Attendees</a></li>
+      </ul> -->
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="speakers.html">Speakers</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="agenda.html">Agenda</a></li>
+      </ul>
+       <ul class="right hide-on-med-and-down">
+        <li><a href="history.html">History</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="ontheday.html">On The Day</a></li>
+</ul>
+<ul class="right hide-on-med-and-down">
+        <li><a href="qanda.html">From Our Speakers</a></li>
+</ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <!-- <li><a href="attendees.html">Attendees</a></li> -->
+        <li><a href="logistics.html">Logistics</a></li>
+        <li><a href="ontheday.html">On The Day</a></li>
+        <li><a href="qanda">From Our Speakers</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center">Women in Technology InterConnect+</h1>
+        <b><h3 class="header col s12 light center">Event Logistics</h3></b>
+        <div class="row center">
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/Banner Pantone.jpg" alt="home"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+
+      <h5>Date & Time</h5>
+      <ul>
+        <li>Wednesday 25th April 2018</li>
+        <li>Doors open at 9am for registration, with a formal start at 9.30am sharp. We will finish by 4.30pm</li>
+      </ul>
+
+      <h5>Location</h5>
+      <ul>
+        <li>
+          Sackville Street Building, 58 Sackville Street, Manchester, M1 3WS. This is towards the North of the University campus.
+          <br><br>
+          University of Manchester maps site: <a href="http://www.manchester.ac.uk/discover/maps/" target="_blank">http://www.manchester.ac.uk/discover/maps/</a>
+          <br>
+          University of Manchester interactive map: <a href="http://www.manchester.ac.uk/discover/maps/interactive-map/" target="_blank">http://www.manchester.ac.uk/discover/maps/interactive-map/</a>
+          <br>
+          University of Manchester downloadable map: <a href="http://documents.manchester.ac.uk/display.aspx?DocID=6507" target="_blank">http://documents.manchester.ac.uk/display.aspx?DocID=6507</a>
+          <br>
+        </li>
+      </ul>
+      <!-- map -->
+      <div id="map"></div>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOe352MNySX1iv47TAHrAviWVaDD6Atw&callback=initMap">
+      </script>
+      <script>
+        function initMap() {
+          var uluru = {
+            lat: 53.475743,
+            lng: -2.235514
+          };
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <!-- end map -->
+      <br>
+      <ul><li>The venue is a 7- to 10-minute walk from Manchester Piccadilly station, and we recommend using public transport to travel to the university.  There may be parking available in the Charles Street Car Park, just 3 minutes from the venue, but spaces are small and fill fast.  You can find more about parking options and prices here: <a href="http://www.estates.manchester.ac.uk/services/operationalservices/carparking/" target="_blank">http://www.estates.manchester.ac.uk/services/operationalservices/carparking/</a></li></ul>
+      <h5>Dress Code</h5>
+      <ul>
+        <li>We would recommend smart casual or business casual</li>
+      </ul>
+
+      <h5>Social Media</h5>
+      <ul>
+        <li>If you'd like to tweet about the event, please use the hashtag #IBMWIT. You could also follow <a href="https://twitter.com/interconnectibm?lang=en" target="_blank">@InterConnectIBM</a> on Twitter.</li>
+        <li>An invite to a Slack workspace will follow soon.</li>
+      </ul>
+      <h5>Laptops</h5>
+      <ul>
+        <li>Laptops will not be required for this event</li>
+      </ul>
+      <h5>Learning Credits</h5>
+      <ul>
+        <li>Those who register at the event will be awarded credit towards YourLearning via EventCentral</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="center">
+            <a href="" target="_blank"><img src="images/slack.jpg" style="width:100px; height:100px" alt="slack"></a>
+            <br> Or email <a href="mailto:INTPROGO@uk.ibm.com?Subject=Information" target="_top">InterConnect Programme Office</a> for more information
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer deep-purple darken-2" >
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/Wbbe832443fb9_4b81_bd90_251de624455c/page/Rapid%20Prototyping%20Service">IBM Rapid Prototyping</a>
+
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
